@@ -4,16 +4,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #f3f4f6; /* bg-gray-100 */
-  background-color: #1e293b; /* dark:bg-dark-800 - using slate-800 as fallback */
+  background-color: #f5f5f5; /* bg-neutral */
+  background-color: #333333; /* dark:bg-secondary-800 - dark mode fallback */
 }
 
 .dark ::-webkit-scrollbar-track {
-  background-color: #1e293b; /* dark:bg-dark-800 */
+  background-color: #333333; /* dark:bg-secondary-800 */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #2a9d94; /* bg-primary-500 */
+  background-color: #007bff; /* bg-primary-500 */
   border-radius: 9999px; /* rounded-full */
 }
 
@@ -25,8 +25,8 @@ html {
 }
 
 body {
-  background-color: #f9fafb; /* bg-light */
-  color: #1f2937; /* text-gray-800 */
+  background-color: #ffffff; /* bg-light */
+  color: #222222; /* text-secondary-900 */
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
@@ -34,8 +34,8 @@ body {
 }
 
 .dark body {
-  background-color: #1a2238; /* dark:bg-dark */
-  color: #e5e7eb; /* dark:text-gray-200 */
+  background-color: #222222; /* dark:bg-dark */
+  color: #f5f5f5; /* dark:text-neutral */
 }
 
 /* Typography */
@@ -95,22 +95,22 @@ h4 {
 
 /* Links */
 a {
-  color: #1f7c74; /* text-primary-600 */
+  color: #0062cc; /* text-primary-600 */
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
 }
 
 a:hover {
-  color: #1b665f; /* hover:text-primary-700 */
+  color: #004999; /* hover:text-primary-700 */
 }
 
 .dark a {
-  color: #3fb1a8; /* dark:text-primary-400 */
+  color: #66b3ff; /* dark:text-primary-400 */
 }
 
 .dark a:hover {
-  color: #78ccc5; /* dark:hover:text-primary-300 */
+  color: #99ccff; /* dark:hover:text-primary-300 */
 }
 
 /* Animations */
