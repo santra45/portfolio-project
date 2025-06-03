@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { ArrowDownIcon } from '@heroicons/react/24/outline';
 
 export default function Hero() {
   return (
@@ -57,23 +56,34 @@ export default function Hero() {
           </motion.div>
 
           <motion.div 
-            className="absolute bottom-6 sm:bottom-8 md:bottom-10 lg:bottom-14 left-1/2 transform -translate-x-1/2 pointer-events-none"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ 
-              opacity: [0, 1, 1, 0],
-              y: [10, 0, -10, -20]
-            }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              repeatType: "loop",
-              ease: "easeInOut"
+            className="absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center pointer-events-none text-gray-500 dark:text-gray-400"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
             }}
           >
-            <div className="flex flex-col items-center text-gray-500 dark:text-gray-400">
-              <span className="text-sm mb-1">Scroll down</span>
-              <ArrowDownIcon className="h-5 w-5" />
-            </div>
+            {/* Stylised mouse scroll indicator */}
+            <motion.div
+              className="w-7 h-12 rounded-full border-2 border-current flex justify-center items-start"
+              animate={{ opacity: [0.6, 1, 0.6] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <motion.span
+                className="w-1.5 h-1.5 rounded-full bg-current mt-2"
+                animate={{ y: [0, 6, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              />
+            </motion.div>
+
+            <motion.span
+              className="mt-3 text-xs tracking-widest font-semibold select-none"
+              animate={{ opacity: [0.6, 1, 0.6] }}
+              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+            >
+              SCROLL
+            </motion.span>
           </motion.div>
         </div>
       </div>

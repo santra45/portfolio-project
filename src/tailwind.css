@@ -13,7 +13,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #0ea5e9; /* bg-primary-500 */
+  background-color: #2a9d94; /* bg-primary-500 */
   border-radius: 9999px; /* rounded-full */
 }
 
@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  background-color: #f8fafc; /* bg-light */
+  background-color: #f9fafb; /* bg-light */
   color: #1f2937; /* text-gray-800 */
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -34,7 +34,7 @@ body {
 }
 
 .dark body {
-  background-color: #0f172a; /* dark:bg-dark */
+  background-color: #1a2238; /* dark:bg-dark */
   color: #e5e7eb; /* dark:text-gray-200 */
 }
 
@@ -95,22 +95,22 @@ h4 {
 
 /* Links */
 a {
-  color: #0284c7; /* text-primary-600 */
+  color: #1f7c74; /* text-primary-600 */
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
 }
 
 a:hover {
-  color: #0369a1; /* hover:text-primary-700 */
+  color: #1b665f; /* hover:text-primary-700 */
 }
 
 .dark a {
-  color: #38bdf8; /* dark:text-primary-400 */
+  color: #3fb1a8; /* dark:text-primary-400 */
 }
 
 .dark a:hover {
-  color: #7dd3fc; /* dark:hover:text-primary-300 */
+  color: #78ccc5; /* dark:hover:text-primary-300 */
 }
 
 /* Animations */
