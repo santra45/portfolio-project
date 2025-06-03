@@ -20,6 +20,9 @@ export default function Header() {
   const { 
     darkMode, 
     toggleDarkMode, 
+    setSystemThemePreference,
+    setDarkTheme,
+    setLightTheme,
     isUsingSystemTheme 
   } = useTheme();
   
@@ -28,13 +31,17 @@ export default function Header() {
   const [showThemeOptions, setShowThemeOptions] = useState(false);
   
   const handleThemeChange = (theme) => {
+    setShowThemeOptions(false);
+    
     if (theme === 'system') {
-      localStorage.removeItem('darkMode');
-      setShowThemeOptions(false);
-      // System preference will be handled by the ThemeContext
-    } else {
-      toggleDarkMode();
-      setShowThemeOptions(false);
+      // Use system theme preference
+      setSystemThemePreference();
+    } else if (theme === 'light') {
+      // Explicitly set to light mode
+      setLightTheme();
+    } else if (theme === 'dark') {
+      // Explicitly set to dark mode
+      setDarkTheme();
     }
   };
 
