@@ -7,6 +7,7 @@ import Hero from './components/sections/Hero';
 import About from './components/sections/About';
 import Projects from './components/sections/Projects';
 import Contact from './components/sections/Contact';
+import Stats from './components/sections/Stats';
 
 function App() {
   // Enable smooth scrolling for anchor links
@@ -20,6 +21,7 @@ function App() {
           <main className="flex-grow">
             <Hero />
             <About />
+            <Stats />
             <Projects />
             <Contact />
           </main>

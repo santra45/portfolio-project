@@ -6,9 +6,9 @@ export const navLinks = [
 ];
 
 export const socialLinks = [
-  { name: 'GitHub', href: 'https://github.com/yourusername', icon: 'CodeBracketIcon' },
-  { name: 'Twitter', href: 'https://twitter.com/yourusername', icon: 'TwitterIcon' },
-  { name: 'LinkedIn', href: 'https://linkedin.com/in/yourusername', icon: 'LinkedInIcon' },
+  { name: 'GitHub', href: 'https://github.com/santra45', icon: 'CodeBracketIcon' },
+  { name: 'Twitter', href: 'https://twitter.com/santra45', icon: 'TwitterIcon' },
+  { name: 'LinkedIn', href: 'https://linkedin.com/in/santra45', icon: 'LinkedInIcon' },
   { name: 'Email', href: 'mailto:your.email@example.com', icon: 'EnvelopeIcon' },
 ];
 
