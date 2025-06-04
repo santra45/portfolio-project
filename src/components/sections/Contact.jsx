@@ -74,10 +74,10 @@ export default function Contact() {
               <h4 className="text-lg font-medium mb-4">Follow Me</h4>
               <div className="flex space-x-4">
                 {[
-                  { name: 'GitHub', url: 'https://github.com/yourusername' },
-                  { name: 'Twitter', url: 'https://twitter.com/yourusername' },
-                  { name: 'LinkedIn', url: 'https://linkedin.com/in/yourusername' },
-                  { name: 'Dribbble', url: 'https://dribbble.com/yourusername' }
+                  { name: 'GitHub', url: 'https://github.com/santra45' },
+                  { name: 'Twitter', url: 'https://twitter.com/santra45' },
+                  { name: 'LinkedIn', url: 'https://linkedin.com/in/santra45' },
+                  { name: 'Dribbble', url: 'https://dribbble.com/santra45' }
                 ].map((social) => (
                   <a
                     key={social.name}

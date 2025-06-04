@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { EnvelopeIcon, CodeBracketIcon, HeartIcon } from '@heroicons/react/24/outline';
 
 const socialLinks = [
-  { name: 'GitHub', href: 'https://github.com/yourusername', icon: CodeBracketIcon },
+  { name: 'GitHub', href: 'https://github.com/santra45', icon: CodeBracketIcon },
   { name: 'Email', href: 'mailto:your.email@example.com', icon: EnvelopeIcon },
 ];
 
@@ -34,7 +34,7 @@ export default function Footer() {
           >
             <span>Made with</span>
             <HeartIcon className="h-5 w-5 text-red-500" />
-            <span>by Your Name</span>
+            <span>by Santra</span>
           </motion.div>
           
           <motion.div 
