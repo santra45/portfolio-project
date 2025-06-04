@@ -1,6 +1,7 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { useSmoothScroll } from './hooks/useSmoothScroll';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Hero from './components/sections/Hero';
@@ -24,6 +25,7 @@ function App() {
             <Stats />
             <Projects />
             <Contact />
+            <SpeedInsights />
           </main>
           <Footer />
         </div>
